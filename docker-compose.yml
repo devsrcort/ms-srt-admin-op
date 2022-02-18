@@ -6,7 +6,7 @@ services:
     labels:
       #- "traefik.backend=ms-srt-admin-op"
       - "traefik.enable=true"
-      - "traefik.http.routers.ms-srt-admin-op.rule=PathPrefix(`/users`)"
+      - "traefik.http.routers.ms-srt-admin-op.rule=PathPrefix(`/admin`)"
     user: root # avoids ton of volume mounting headaches in dev mode.
     build:
       context: .
